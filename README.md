@@ -17,8 +17,8 @@ sort[sortCreated][path]=created&sort[sortCreated][direction]=DESC&fields[recipes
 
 write: 
 
-```
-const buildQueryString = require('D8JSONAPIQueryString').buildQueryString
+```javascript
+const buildQueryString = require('d8-jsonapi-querystring').buildQueryString
 
 buildQueryString({
   sort: {
