@@ -1,0 +1,20 @@
+{
+  "name": "d8-jsonapi-querystring",
+  "version": "0.0.1",
+  "description": "Create a Drupal 8 JSON API query string from a nested object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Drupal 8",
+    "JSON API",
+    "query string"
+  ],
+  "author": "yann",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
