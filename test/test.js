@@ -4,7 +4,7 @@ var expect = require('chai').expect
 /**
  * An example unit test
  */
-describe('JSONAPIQueryBuilder', () => {
+describe('buildQueryString', () => {
   it('should return expected query string from queryParams Object', () => {
     const queryParams = {
       sort: {
