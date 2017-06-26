@@ -9,13 +9,11 @@ describe('buildQueryString', () => {
     const queryParams = {
       include: ['tags', 'image'],
       sort: {
-        sortCreated: {
-          path: 'created',
+        sortByTitleDesc: {
+          path: 'title',
           direction: 'DESC'
         }
       },
-      // shorthand syntax
-      sort: "-created",
       fields: {
         recipes: ['title', 'createdAt', 'tags', 'image'],
         tags:['name', 'weight']
@@ -35,13 +33,14 @@ describe('buildQueryString', () => {
           }
         },
         // "shorthand" notation
-        'uid.name': {value: 'admin'},
+        'isPublished': {value: 1},
       },
       page: {
         offset: 0,
         limit: 4
       }
     }
-    expect(buildQueryString(queryParams)).equal("include=tags,image&sort=-created&fields[recipes]=title,createdAt,tags,image&fields[tags]=name,weight&filter[categoryName][condition][path]=category.name&filter[categoryName][condition][value]=Main%20course&filter[notAnonymous][condition][path]=uid&filter[notAnonymous][condition][value]=0&filter[notAnonymous][condition][operator]=%3C%3E&filter[uid.name][value]=admin&page[offset]=0&page[limit]=4")
+    console.log(buildQueryString(queryParams))
+    expect(buildQueryString(queryParams)).equal("include=tags,image&sort[sortByTitleDesc][path]=title&sort[sortByTitleDesc][direction]=DESC&fields[recipes]=title,createdAt,tags,image&fields[tags]=name,weight&filter[categoryName][condition][path]=category.name&filter[categoryName][condition][value]=Main%20course&filter[notAnonymous][condition][path]=uid&filter[notAnonymous][condition][value]=0&filter[notAnonymous][condition][operator]=%3C%3E&filter[isPublished][value]=1&page[offset]=0&page[limit]=4")
   })
 })
