@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "description": "Create a Drupal 8 JSON API query string from a nested object",
   "main": "index.js",
+  "typings": "d8-jsonapi-querystring.d.ts",
   "scripts": {
     "test": "mocha"
   },
