@@ -1,6 +1,6 @@
 {
   "name": "d8-jsonapi-querystring",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create a Drupal 8 JSON API query string from a nested object",
   "main": "dist/index.js",
   "files": [
