@@ -4,7 +4,8 @@
   "description": "Create a Drupal 8 JSON API query string from a nested object",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "d8-jsonapi-querystring.d.ts"
   ],
   "typings": "d8-jsonapi-querystring.d.ts",
   "scripts": {
