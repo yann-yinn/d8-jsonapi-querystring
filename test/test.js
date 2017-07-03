@@ -1,4 +1,4 @@
-const buildQueryString = require('../dist/build.js').buildQueryString
+const buildQueryString = require('../index.js').buildQueryString
 var expect = require('chai').expect
 
 /**
