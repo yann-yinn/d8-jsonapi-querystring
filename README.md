@@ -4,10 +4,9 @@ Create a Drupal 8 JSON API query string from a nested object.
 
 This make it easier to request a Drupal 8 JSON-API site with [JSON API module](https://www.drupal.org/project/jsonapi)
 
-If you are looking for a complete JS CLient for an API-first Drupal 8, You might be interested in [waterwheel.js](https://www.npmjs.com/package/waterwheel), as it supports JSON API and more.
+If you are looking for a complete JS Client for an API-first Drupal 8, you might be interested in [waterwheel.js](https://www.npmjs.com/package/waterwheel), as it supports JSON API and more.
 
-You may be interested to use it in combination with [jsonapi-parse](https://www.npmjs.com/package/jsonapi-parse) to format json responses
-in a more intuitive way
+You may be interested to use it thoses packages in combination with [jsonapi-parse](https://www.npmjs.com/package/jsonapi-parse) to format json responses in a more intuitive way (it resolves nicely included keys and relationships )
 
 ## USAGE
 
